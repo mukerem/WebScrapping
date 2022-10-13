@@ -12,6 +12,7 @@ for path in json_list:
         if mobile[:5] != '+2519':
             continue
         if mobile in phone:
+            print(mobile, data[mobile][0])
             continue
         
         temp = {
@@ -20,6 +21,7 @@ for path in json_list:
             "category": data[mobile][1]
         }
         a.append(temp)
+        phone.append(mobile)
 h = open("all_bussiness_directory_list.json", "w")
 h.write(json.dumps(a, indent=4))
 h.close()
