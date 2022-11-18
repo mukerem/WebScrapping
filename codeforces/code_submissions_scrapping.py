@@ -116,7 +116,7 @@ def download_submission(user, username):
         page += 1
 
 email = "mukeremali112@gmail.com"
-password = "amina@life"
+password = "*******"
 username = "mukeremali"
 user = auth(email, password)
 download_submission(user, username)
