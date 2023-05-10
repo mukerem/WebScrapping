@@ -72,7 +72,7 @@ def download_submission(user, username):
         cont = get_submission(user, username, page)
         page += 1
 
-username = "mukerem"
-password = "rapi@kattis"
+username = "*****"
+password = "*****"
 user = auth(username, password)
 download_submission(user, username)
